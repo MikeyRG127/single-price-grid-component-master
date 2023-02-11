@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--BrightYellowv2: hsl(71, 58%, 50%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+--white: white;
+--CyanLigh: hsl(179, 63%, 50%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    width: 100vw;
+    height: auto;
+    background-color: var(--LightGray);
+    align-items: center;
+    justify-items: center;
+}
+
+.main-container{
+    display: grid;
+    width: 80%;
+    min-width: 325px;
+    height: max-content;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto ;
+    background-color: white; 
+    border-radius: 8px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.join-our-community{
+    display: grid;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    gap: 27px;
+}
+
+.join-our-community > .item-1{
+    font-family: Karla;
+    font-weight: 700;
+    color: var(--Cyan);
+    font-size: 20px;
+}
+
+.join-our-community > .item-2{
+    font-family: Karla;
+    font-weight: 700;
+    color: var(--BrightYellow);
+    font-size: 15px;
+}
+
+.join-our-community > .item-3{
+    font-family: Karla;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.monthly-subscription{
+    display: grid;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    background-color: var(--Cyan);
+    gap: 20px;
+}
+
+.monthly{
+    font-family: Karla;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 17px;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto;
+    font-family: Karla;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 30px;
+    
+}
+
+.price > span{
+    font-family: Karla;
+    font-weight: 200;
+    color: var(--white);
+    font-size: 15px;
+    align-self: center;
+    justify-self: start;
+    
+}
+
+.access{
+    font-family: Karla;
+    font-weight: 200;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.button{
+    background-color: var(--BrightYellow);
+    border-radius: 5px;
+    border: 0px;
+    font-size: 15px;
+    color: var(--white);
+    font-family: Karla;
+    font-weight: 400;
+    height: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
+}
+.button:hover{
+    background-color: var(--BrightYellowv2);
+}
+
+.why-us{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 5px;
+    background-color: var(--CyanLigh);
+    font-weight: 400;
+    font-family: Karla;
+    font-size: 13px;
+    padding: 30px;
+    border-radius: 0px 0px 8px 8px;
+    color: var(--white);
+}
+
+.title{
+    font-weight: 700;
+    font-family: Karla;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+
+@media only screen and (min-width: 800px){
+
+    body{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--LightGray);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-container{
+        display: grid;
+        width: 80%;
+        min-width: 325px;
+        max-width: 600px;
+        height: max-content;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        background-color: white; 
+        border-radius: 8px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .join-our-community{
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-column: 1 / span 2;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .why-us{
+        display: grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        gap: 5px;
+        background-color: var(--CyanLigh);
+        font-weight: 400;
+        font-family: Karla;
+        font-size: 13px;
+        padding: 30px;
+        border-radius: 0px 0px 8px 0px;
+        color: var(--white);
+    }
+
+    .monthly-subscription{
+        display: grid;
+        width: auto;
+        height: auto;
+        padding: 30px;
+        background-color: var(--Cyan);
+        gap: 20px;
+        border-radius: 0px 0px 0px 5px;
+    }
+}
